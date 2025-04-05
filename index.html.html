@@ -1,0 +1,248 @@
+<html>
+<head>
+<title> My own HTML5 cheatsheet </title>
+</head>
+
+<body style="background-color:LightGrey;">
+<h1> My own HTML5 cheatsheet </h1>
+<h2> Summary </h2>
+	<ol>
+		<li><a href="#1.Elements" style="color: black; text-decoration: none;"> Elements </a></li>
+		<li><a href="#2.Attributes" style="color: black; text-decoration: none;">Attributes</a></li>
+		<li><a href="#3.Headings" style="color: black; text-decoration: none;"> Headings</a></li>
+		<li><a href="#4.Styles" style="color: black; text-decoration: none;"> Styles</a></li>
+		<li><a href="#5. Formatting" style="color: black; text-decoration: none;"> Formatting</a></li>
+		<li><a href="#6. Comments" style="color: black; text-decoration: none;">Comments</a></li>
+		<li><a href="#7. Lists" style="color: black; text-decoration: none;">Lists</a></li>
+
+	</ol>
+
+<h3 id="1.Elements"> 1. Elements </h3>
+	<p> The HTML element is everything from the start tag to the end tag, a tag starts with &lt;tagname&gt; and 	ends wit &lt/tagname&gt; </p>
+	
+
+<h4> List of important tags </h4>
+<table style="border-collapse: collapse;">
+	<tr>
+	 <th style="border: 1px solid black; width: 200px;"> Tag </th>
+	 <th style="border: 1px solid black; width: 200px;"> What it does </th>
+	 <th style="border: 1px solid black; width: 200px;"> Special </th>
+	</tr>
+	<tr>
+	 <td style="border: 1px solid black;"> &lt;h1&gt; </td>
+	 <td style="border: 1px solid black;"> defines a heading  </td>
+	 <td style="border: 1px solid black;"> different "sizes": h1,h2,...,h6 </td>
+	</tr>
+	<tr>
+	 <td style="border: 1px solid black;"> &lt;p&gt; </td>
+	 <td style="border: 1px solid black;"> Paragraph </td>
+ 	<td style="border: 1px solid black; text-align: center;"> - </td>
+	</tr>
+	<tr>
+	 <td style="border: 1px solid black;"> &lt;br&gt; </td>
+	 <td style="border: 1px solid black;"> defines a line break </td>
+	 <td style="border: 1px solid black;"> doesnt Need a Closing tag </td>
+	</tr>
+</table>
+
+<h3 id="2.Attributes"> 2. Attributes </h3>
+	<p> An HTML attribute is extra information added to an HTML tag that helps define the behavior, appearance, 	or metadata of that element</p>
+	
+<h4> 2.1. Structure </h4>
+	<p> <pre style="background-color: DimGray; color: white; padding: 10px; border-radius: 6px;"> &lt;p style="color:red;"&lt;tagname attribute="value"&gt; Content &lt/tagname&gt;</pre> </p>
+
+<h4> 2.2. href Attribute </h4>
+	<p> The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes 	to <br> Example create a Link to a YouTube video: <br> <a href="https://youtu.be/GBIIQ0kP15E?si=8mp70O5nA5	_fN3gH">  click me </a> <br> it would look like this &rarr; <pre style="background-color: DimGray; color: 	white; 	padding: 10px; border-radius: 6px;"> &lt;a href="https://youtu.be/GBIIQ0kP15E?si=8mp70O5nA5_fN3gH"&gt; click me &lt;/a&gt; </pre> </p> 
+
+<h4> 2.3. src Attribute </h4>
+	<p> The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to 	the image to be displayed <br> The image can be sourced localy or from a Website</p>
+
+<table style="border-collapse: collapse;">
+	<tr>
+	 <td style="border: 1px solid black;"> local </td>
+	 <td style="border: 1px solid black;"> Ex: &lt;img src="shutterstockRF_623451695.jpg"&gt; </td>
+	</tr>
+	<tr>
+	 <td style="border: 1px solid black;"> Website </td>
+	 <td style="border: 1px solid black;"> Ex: &lt;img src="https://www.lonelyplanet.de/magazin/reportagen/asien/japans-naturwunder.html"&gt; </td>
+	</tr>
+</table>
+
+	<p> The width and height of an image can also be changed &rarr; &lt;img src="img_girl.jpg" width="500" 	height="600"&gt; </p>
+	<img src="shutterstockRF_623451695.jpg" alt="Cherry blossoms in full splendor">
+	<p> The alt attribute can be used to describe what is shown in a image, when its not displayed (img not 	found) <br> <pre style="background-color: DimGray; color: white; padding: 10px; border-radius: 	6px;">&lt;img src="shutterstockRF_623451695.jpg" alt="Cherry blossoms in full splendor"&gt; </pre></p>
+	<img src="shutterstockRF_62345165.jpg" alt="Cherry blossoms in full splendor">	
+
+<h4> 2.4. style Attribute </h4>
+	<p> The style attribute is used to add styles to an element, such as color, font, size, and more. </p>
+	<p style="color:red;"> This is a red paragraph </p> 
+	<p> <pre style="background-color: DimGray; color: white; padding: 10px; border-radius: 6px;"> &lt;p 	style="color:red;"&gt; This is a red paragraph &lt;/p&gt; </pre> </p> 
+
+<h3 id="3.Headings"> 3. Headings </h3> 
+	<p> HTML headings are titles or subtitles that you want to display on a webpage, &lt;h1&gt; defines the 	most important heading. &lt;h6&gt; defines the least important </p>
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
+
+
+<h3 id="4.Styles"> 4. Styles </h3>
+	<p> The HTML style attribute is used to add styles to an element, such as color, font, size, and more </p>
+
+<h4> 4.1. Structure </h4>
+	<p> <pre style="background-color: DimGray; color: white; padding: 10px; border-radius: 6px;"> &lt;tagname style="property:value;"&gt;  </pre> </p>
+
+<h4> 4.2. list of Styles </h4>
+<table style="border-collapse: collapse;">
+	<tr>
+	 <th style="border: 1px solid black; width: 200px;"> Attribute </th>
+	 <th style="border: 1px solid black; width: 200px;"> What it does </th>
+	 <th colspan="2" style="border: 1px solid black; width: 400px;"> Example </th>
+	</tr>
+	<tr>
+	 <td style="border: 1px solid black;"> &lt;background-color&gt; </td>
+	 <td style="border: 1px solid black;">  set background color for different elements (heading,paragraph,...) </td>
+	 <td style="border: 1px solid black;"> &lt;body style="background-color:powderblue;"&gt; </td>
+	 <td style="border: 1px solid black;"> <body style="background-color:powderblue;"> </td>
+	</tr>
+	<tr>
+	 <td style="border: 1px solid black;"> &lt;color&gt; </td>
+	 <td style="border: 1px solid black;"> set text colors for different elements (heading,paragraph,...) </td>
+ 	 <td style="border: 1px solid black; text-align: center;"> &lt;h1 style="color:blue;"&gt;This is a heading&lt;/h1&gt;</td>
+	 <td style="border: 1px solid black; text-align: center;"> <h1 style="color:blue;">This is a heading</h1></td>
+	</tr>
+	<tr>
+	 <td style="border: 1px solid black;"> &lt;font-family&gt; </td>
+	 <td style="border: 1px solid black;"> set text fonts for different elements (heading,paragraph,...) </td>
+	 <td style="border: 1px solid black;"> &lt;h1 style="font-family:verdana;"&gt;This is a heading&lt;/h1&gt; </td>
+	 <td style="border: 1px solid black;"> <h1 style="font-family:verdana;">This is a heading</h1> </td>
+	</tr>
+	<tr>
+ 	 <td style="border: 1px solid black;"> &lt;font-size&gt; </td>
+	 <td style="border: 1px solid black;"> set text sizes for different elements (heading,paragraph,...)</td>
+	 <td style="border: 1px solid black;"> &lt;h1 style="font-size:300%;"&gt;This is a heading&lt;/h1&gt; </td>
+	 <td style="border: 1px solid black;"> <h1 style="font-size:300%;">This is a heading</h1> </td>
+	</tr>
+	<tr>
+	 <td style="border: 1px solid black;"> &lt;text-align&gt; </td>
+	 <td style="border: 1px solid black;"> for horizontal text alignment for an element</td>
+	 <td style="border: 1px solid black;"> &lt;h1 style="text-align:center;"&gt;Centered Heading&lt;/h1&gt; </td>
+	 <td style="border: 1px solid black;"> <h1 style="text-align:center;">Centered Heading</h1> </td>
+	</tr>
+</table>
+
+
+<h3 id="5. Formatting"> 5. Formatting </h3>
+	 
+<table style="border-collapse: collapse; width: auto;">
+  <tr>
+    <th style="border: 1px solid black; padding: 8px;">Tag</th>
+    <th style="border: 1px solid black; padding: 8px;">What it does</th>
+    <th colspan="2" style="border: 1px solid black; padding: 8px;">Example</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;b&gt;</td>
+    <td style="border: 1px solid black;">Bold text (visually bold, no extra meaning)</td>
+    <td style="border: 1px solid black;">&lt;b&gt;Bold&lt;/b&gt;</td>
+    <td style="border: 1px solid black;"><b>Bold</b></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;strong&gt;</td>
+    <td style="border: 1px solid black;">Important text (bold + semantic meaning)</td>
+    <td style="border: 1px solid black;">&lt;strong&gt;Important&lt;/strong&gt;</td>
+    <td style="border: 1px solid black;"><strong>Important</strong></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;i&gt;</td>
+    <td style="border: 1px solid black;">Italic text (visual only)</td>
+    <td style="border: 1px solid black;">&lt;i&gt;Italic&lt;/i&gt;</td>
+    <td style="border: 1px solid black;"><i>Italic</i></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;em&gt;</td>
+    <td style="border: 1px solid black;">Emphasized text (italic + semantic meaning)</td>
+    <td style="border: 1px solid black;">&lt;em&gt;Emphasized&lt;/em&gt;</td>
+    <td style="border: 1px solid black;"><em>Emphasized</em></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;mark&gt;</td>
+    <td style="border: 1px solid black;">Highlighted/marked text</td>
+    <td style="border: 1px solid black;">&lt;mark&gt;Marked&lt;/mark&gt;</td>
+    <td style="border: 1px solid black;"><mark>Marked</mark></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;small&gt;</td>
+    <td style="border: 1px solid black;">Smaller, less prominent text</td>
+    <td style="border: 1px solid black;">&lt;small&gt;Small&lt;/small&gt;</td>
+    <td style="border: 1px solid black;"><small>Small</small></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;del&gt;</td>
+    <td style="border: 1px solid black;">Deleted/struck-through text</td>
+    <td style="border: 1px solid black;">&lt;del&gt;Deleted&lt;/del&gt;</td>
+    <td style="border: 1px solid black;"><del>Deleted</del></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;ins&gt;</td>
+    <td style="border: 1px solid black;">Inserted text (usually underlined)</td>
+    <td style="border: 1px solid black;">&lt;ins&gt;Inserted&lt;/ins&gt;</td>
+    <td style="border: 1px solid black;"><ins>Inserted</ins></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;sub&gt;</td>
+    <td style="border: 1px solid black;">Subscript (e.g., chemical formulas)</td>
+    <td style="border: 1px solid black;">H&lt;sub&gt;2&lt;/sub&gt;O</td>
+    <td style="border: 1px solid black;">H<sub>2</sub>O</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;">&lt;sup&gt;</td>
+    <td style="border: 1px solid black;">Superscript (e.g., exponents)</td>
+    <td style="border: 1px solid black;">E = mc&lt;sup&gt;2&lt;/sup&gt;</td>
+    <td style="border: 1px solid black;">E = mc<sup>2</sup></td>
+  </tr>
+</table>
+
+
+<h3 id="6. Comments"> 6. Comments </h3>
+	<p> <pre style="background-color: DimGray; color: white; padding: 10px; border-radius: 6px;"> To add a comment &rarr; &lt;!-- Write a comment --&gt;  </pre> </p>
+
+
+
+<h3 id="7. Lists"> 7. Lists </h3>
+	<p> there are two types of Lists </p>
+
+<table>
+	<tr>
+	 <th> unordered list </th>
+	 <th> ordered list </th>
+	</tr>
+	 <tr>
+	 <td>
+	  <ul>
+	   <li> coffee </li>
+	   <li> Tea </li>
+	   <li> Milk </li>
+	  </ul>
+	 </td>
+	 <td>
+	  <ol>
+	   <li> coffee </li>
+	   <li> Tea </li>
+	   <li> Milk </li>
+ 	  </ol>
+	 </td>
+	</tr>
+</table>
+
+<p> An unordered list starts with the &lt;ul&gt; tag. The list items will be marked with bullets by default <br>
+An ordered list starts with the &lt;ol&gt; tag. The list items will be marked with numbers by default </p>
+
+
+
+
+
+</body>
+</html>
+
